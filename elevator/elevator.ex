@@ -45,3 +45,10 @@ defmodule Elevator do
   	IO.puts "Thank you, door is closing."
   end
 end
+
+#Elevator.activate_floor_button(1..10, 1, 5)
+floors = [1..12]
+initial_floor = 1
+{desired_floor, _} = Integer.parse(IO.gets "Select a floor ")
+Elevator.activate_floor_button(floors, initial_floor, desired_floor)
+
